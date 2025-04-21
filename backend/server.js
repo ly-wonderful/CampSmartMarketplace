@@ -16,7 +16,7 @@ testConnection();
 // Get all camps
 app.get('/api/camps', async (req, res) => {
   try {
-    const [rows] = await pool.query('SELECT * FROM camps');
+    const [rows] = await pool.query('SELECT * FROM csm.camps');
     res.json(rows);
   } catch (error) {
     console.error('Error fetching camps:', error);
@@ -27,7 +27,7 @@ app.get('/api/camps', async (req, res) => {
 // Get featured camps
 app.get('/api/camps/featured', async (req, res) => {
   try {
-    const [rows] = await pool.query('SELECT * FROM camps WHERE featured = 1');
+    const [rows] = await pool.query('SELECT * FROM csm.camps WHERE featured = 1');
     res.json(rows);
   } catch (error) {
     console.error('Error fetching featured camps:', error);
@@ -40,7 +40,7 @@ app.get('/api/camps/filter', async (req, res) => {
   try {
     const { location, interests, minAge, maxAge, maxPrice } = req.query;
     
-    let query = 'SELECT * FROM camps WHERE 1=1';
+    let query = 'SELECT * FROM csm.camps WHERE 1=1';
     const params = [];
     
     if (location) {
