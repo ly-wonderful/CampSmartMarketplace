@@ -1,0 +1,298 @@
+/* Main layout styles */
+.app-container {
+    background-color: #f9fafb;
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .header-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1e3a8a;
+  }
+  
+  .header-subtitle {
+    color: #6b7280;
+  }
+  
+  /* Filter section styles */
+  .filters-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .filter-item {
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .filter-icon {
+    color: #2563eb;
+    margin-right: 0.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .filter-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    z-index: 10;
+    margin-top: 0.5rem;
+    display: none;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+  }
+  
+  .dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .interest-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .interest-tag.selected {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .interest-tag.not-selected {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .price-filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .price-range {
+    width: 10rem;
+  }
+  
+  .search-button {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .search-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Featured camps section */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-camps {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    scrollbar-width: thin;
+  }
+  
+  .camp-card {
+    flex-shrink: 0;
+    width: 18rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .camp-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+  
+  .camp-content {
+    padding: 1rem;
+  }
+  
+  .camp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .camp-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .camp-category {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .camp-location {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: #6b7280;
+  }
+  
+  .camp-location-text {
+    font-size: 0.875rem;
+  }
+  
+  .camp-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+  }
+  
+  .camp-age {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .camp-price {
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  .camp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .camp-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-star {
+    color: #fbbf24;
+  }
+  
+  .rating-value {
+    font-size: 0.875rem;
+    margin-left: 0.25rem;
+  }
+  
+  .view-button {
+    background-color: #2563eb;
+    color: white;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* All camps section */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sort-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-label {
+    color: #6b7280;
+    margin-right: 0.5rem;
+  }
+  
+  .sort-select {
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .camps-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .camps-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .camps-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .loading-message {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
