@@ -100,8 +100,9 @@ export default function CampSmartMarketplace() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1 className="header-title">SummerCamp Explorer</h1>
-        <p className="header-subtitle">Find the perfect summer camp for your child</p>
+        {/* <h1 className="header-title">CampSmart Marketplace</h1> */}
+        <img src="/logo_wide.png" alt="CampSmart Logo" className="header-logo" />
+        {/* <p className="header-subtitle">Finding the perfect camp for your children never been easier! </p> */}
       </header>
       
       {/* Horizontal Filters */}
